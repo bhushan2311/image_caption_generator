@@ -1,5 +1,7 @@
-body {
+html, body {
+  height: 100%;
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +12,50 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.imgcss{
+  border: 2px solid black;
+  width: 35rem;
+}
+
+.divtop{
+  background-color: rgb(212, 134, 236);
+  height: 100vh;
+  width: 100vw;
+}
+
+.div1{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* CSS */
+.btn {
+  background-color: rgb(124, 13, 158);
+  border: 1px solid rgb(182, 86, 212);
+  border-radius: 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px; */
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: rgb(191, 0, 255);
 }
