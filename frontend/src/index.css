@@ -1,5 +1,4 @@
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,23 +19,28 @@ code {
 }
 
 .divtop{
-  background-color: rgb(212, 134, 236);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 
 .div1{
-  /* border: 2px solid red; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
+.rightbar{
+margin: 50px;
 
+}
+.heading{
+  background: linear-gradient(to left,
+rgb(89, 186, 238),rgb(70, 181, 241),rgb(35, 147, 238),rgb(38, 178, 238),rgb(18, 140, 215),rgb(17, 87, 184),rgb(18, 54, 145));
+-webkit-background-clip: text;
+color: transparent;
+}
 /* CSS */
 .btn {
-  background-color: rgb(124, 13, 158);
-  border: 1px solid rgb(182, 86, 212);
+  background-color: rgb(46, 162, 251);
   border-radius: 8px;
   /* box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px; */
   color: #FFFFFF;
@@ -57,5 +61,5 @@ code {
 }
 
 .btn:hover {
-  background-color: rgb(191, 0, 255);
+  background-color: rgb(99, 65, 248);
 }
