@@ -1,0 +1,26 @@
+.topbarcontainer{
+    margin-top: 50px;
+    margin-left: 100px;
+    height:60px;
+    width:1000px;
+    display :flex;
+    align-items: center;
+    position: sticky;
+    background-color:whitesmoke;
+   box-shadow: 0 .3rem 1rem rgba(133, 130, 130, 0.5);
+   justify-content: center;
+   border-radius: 30px;
+}
+.logo{
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: 1px;
+    align-items: center;
+    font-size: 20px;
+    color:rgb(73, 99, 124);
+    font-weight: bold;
+}
+.topbarleft{
+    margin-left: 8px;
+    flex:3;
+}

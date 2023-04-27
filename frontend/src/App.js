@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./index.css";
+import Topbar from "./Topbar";
+import back2 from "./background/back2.jpg"
+
 
 const ImageCaptionGenerator = () => {
   const [image, setImage] = useState("");
@@ -19,9 +22,15 @@ const ImageCaptionGenerator = () => {
 
   return (
     <>
-      <div className="divtop">
+    
+      <div className="divtop" style={{ backgroundImage:`url(${back2})`,backgroundRepeat:"no-repeat",backgroundSize:"contain",height:770,width:1320 }}>
+        
+        <Topbar/>
         <div className="div1">
-          <h1 className="heading">Image Caption Generator</h1>
+        <div className="rightbar">
+          <h1 className="heading">Caption Generator</h1>
+          <h5>upload image below</h5>
+          
           <input type="file" onChange={handleImageChange} />
           <div className="imgdiv">
             {preview && <img className="imgcss" src={preview} alt="image" />}
@@ -30,6 +39,7 @@ const ImageCaptionGenerator = () => {
           <div>
             <button className="btn" onClick={handleGenerateCaption}>Generate Caption</button>
           </div>
+        </div>
         </div>
       </div>
     </>
