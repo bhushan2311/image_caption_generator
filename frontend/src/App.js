@@ -15,6 +15,11 @@ const ImageCaptionGenerator = () => {
 
   const handleGenerateCaption = async (event) => {
     // upload image to server using post request
+
+
+
+
+    
   };
 
   return (
