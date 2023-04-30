@@ -19,21 +19,23 @@ const ImageCaptionGenerator = () => {
 
   const handleGenerateCaption = async (event) => {
     // upload image to server using post request
-    const formData = new FormData();
-    formData.append('file', selectedFile);
-    console.log("hi");
-    try {
-      const url = `http://localhost:5000/after`;
-      const response = await fetch(url, {
-        method: "Post",
-        body: formData,
-      });
+
+    window.location.href = '/Result';
+    // const formData = new FormData();
+    // formData.append('file', selectedFile);
+    // console.log("hi");
+    // try {
+    //   const url = `http://localhost:5000/after`;
+    //   const response = await fetch(url, {
+    //     method: "Post",
+    //     body: formData,
+    //   });
       
-      const data = await response.json();
-      setCaption(data.caption);
-    } catch (err) {
-      console.log(err);
-    }
+    //   const data = await response.json();
+    //   setCaption(data.caption);
+    // } catch (err) {
+    //   console.log(err);
+    // }
 
   };
 
@@ -63,6 +65,23 @@ const ImageCaptionGenerator = () => {
   );
 };
 
+
+// import Result from './components/Result';
+// import Upload from './components/Upload';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// const App = () => {
+//   const pgSize = 6;
+//   return (
+//     <div>
+//       <Router>
+//         <Navbar />
+//         <Routes>
+//           <Route exact path="/" element={<Upload/>} />
+//         </Routes>
+//       </Router>
+//     </div>
+//   )
+// }
 export default ImageCaptionGenerator;
 
 
