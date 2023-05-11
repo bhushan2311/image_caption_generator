@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -13,31 +14,34 @@ code {
     monospace;
 }
 
-.imgcss{
+.imgcss {
   border: 2px solid black;
   width: 35rem;
 }
 
-.divtop{
+.divtop {
   height: 100%;
   width: 100%;
   padding: 10px;
 }
 
-.div1{
+.div1 {
   display: flex;
   flex-direction: row;
 }
-.rightbar{
-margin: 50px;
+
+.rightbar {
+  margin: 50px;
 
 }
-.heading{
+
+.heading {
   background: linear-gradient(to left,
-rgb(89, 186, 238),rgb(70, 181, 241),rgb(35, 147, 238),rgb(38, 178, 238),rgb(18, 140, 215),rgb(17, 87, 184),rgb(18, 54, 145));
--webkit-background-clip: text;
-color: transparent;
+      rgb(89, 186, 238), rgb(70, 181, 241), rgb(35, 147, 238), rgb(38, 178, 238), rgb(18, 140, 215), rgb(17, 87, 184), rgb(18, 54, 145));
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
 /* CSS */
 .btn {
   background-color: rgb(46, 162, 251);
@@ -46,14 +50,14 @@ color: transparent;
   color: #FFFFFF;
   cursor: pointer;
   display: block;
-  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 100%;
   margin: 0;
   outline: 0;
   padding: 11px 15px 12px;
   text-align: center;
-  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  transition: box-shadow .05s ease-in-out, opacity .05s ease-in-out;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -63,3 +67,98 @@ color: transparent;
 .btn:hover {
   background-color: rgb(99, 65, 248);
 }
+
+/* ----------- Result page ----------- */
+.result-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(47, 93, 210, 0.74);
+}
+
+.result-window {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+.result-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.result-image {
+  max-width: 500px;
+  max-height: 368px;
+  margin: 0px 60px;
+}
+
+.result-caption {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.text-to-speech-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.translate-btn {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
