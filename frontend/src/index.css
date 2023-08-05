@@ -22,7 +22,8 @@ code {
 .divtop {
   height: 100%;
   width: 100%;
-  padding: 10px;
+  padding: 102px;
+  /* background-color: #4CAF50; */
 }
 
 .div1 {
@@ -43,7 +44,7 @@ code {
 }
 
 /* CSS */
-.btn {
+.btnGenerate {
   background-color: rgb(46, 162, 251);
   border-radius: 8px;
   /* box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px; */
@@ -61,10 +62,12 @@ code {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100%;
+  width: 53%;
+  margin-top: 42px;
+  margin-left: 59px;
 }
 
-.btn:hover {
+.btnGenerate:hover {
   background-color: rgb(99, 65, 248);
 }
 
@@ -75,7 +78,8 @@ code {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: rgba(47, 93, 210, 0.74);
+
+  background-color: #3a2d70;
 }
 
 .result-window {
@@ -97,12 +101,12 @@ code {
   align-items: center;
   justify-content: center;
   width: 80%;
-  max-width: 800px;
+  max-width: 42rem;
   height: auto;
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, -0.1);
 
   /* display: flex;
   flex-direction: column;
@@ -129,6 +133,7 @@ code {
 .result-caption {
   font-weight: bold;
   font-size: 18px;
+  color: black;
 }
 
 .text-to-speech-btn {
@@ -161,4 +166,60 @@ code {
   z-index: -1;
 }
 
+.btm {
+  background-image: -webkit-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -moz-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -ms-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -o-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: linear-gradient(to bottom, #FFF3E2, #FFE5CA);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #7B2869;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 40px 10px 40px;
+  text-decoration: none;
+}
+.btm:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
 
+/* -------------- choose file -------------- */
+.result-logout{
+  background-image: -webkit-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -moz-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -ms-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: -o-linear-gradient(top, #FFF3E2, #FFE5CA);
+  background-image: linear-gradient(to bottom, #FFF3E2, #FFE5CA);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #7B2869;
+  padding: 6px 18px;
+  cursor: pointer;
+}
+
+.result-logout:hover{
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+/* -----------------------Extra button ----------------- */
+.extra-button{
+  display: flex;
+  flex-direction: row;
+}

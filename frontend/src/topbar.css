@@ -1,5 +1,5 @@
 .topbarcontainer{
-    margin-top: 50px;
+    margin-top: -25px;
     margin-left: 100px;
     height:60px;
     width:1000px;
@@ -8,7 +8,7 @@
     position: sticky;
     background-color:whitesmoke;
    box-shadow: 0 .3rem 1rem rgba(133, 130, 130, 0.5);
-   justify-content: center;
+   justify-content: space-between;
    border-radius: 30px;
 }
 .logo{
@@ -22,5 +22,32 @@
 }
 .topbarleft{
     margin-left: 8px;
-    flex:3;
+    /* flex:3; */
 }
+
+.btnn {
+    background-color: rgb(46, 162, 251);
+    border-radius: 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px; */
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 7px 10px 5px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out, opacity .05s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 53%;
+    margin-top: 3px;
+    margin-left: 43px;
+  }
+  
+  .btnn:hover {
+    background-color: rgb(99, 65, 248);
+  }
