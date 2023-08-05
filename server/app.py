@@ -23,14 +23,16 @@ print("resnet loaded")
 
 # resnet = load_model('resnet.h5')
 
-vocab = np.load('vocab.npy', allow_pickle=True)
+vocab = np.load('vocab.npy', allow_pickle=True)               
+# vocab = np.load('vocab1.npy', allow_pickle=True)        #---------------- Changes
 
 vocab = vocab.item()
 
 inv_vocab = {v:k for k,v in vocab.items()}
 
 embedding_size = 128
-max_len = 40
+max_len = 40                      
+# max_len = 36                            #---------------- Changes
 vocab_size = len(vocab)
 
 image_model = Sequential()
@@ -57,6 +59,7 @@ model = Model(inputs=[image_model.input, language_model.input], outputs = out)
 model.compile(loss='categorical_crossentropy', optimizer='RMSprop', metrics=['accuracy'])
 
 model.load_weights('mine_model_weights.h5')
+# model.load_weights('model_weights.h5')                     #---------------- Changes
 
 print("="*50)
 print("model loaded")
@@ -76,7 +79,7 @@ def after():
     file.save('static/file.jpg')
     img = cv2.imread('static/file.jpg')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    img = cv2.resize(img,(224,224,))
+    img = cv2.resize(img,(224,224,))                    # diff
     img = np.reshape(img,(1,224,224,3))
 
     # img = image.load_img(file, target_size=(224, 224))
