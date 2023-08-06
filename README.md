@@ -53,7 +53,15 @@ After successfully Logging in, the user can see the text-to-speech and translati
 
 
 
+# Login Page
+
+![Screenshot (119)](https://github.com/bhushan2311/image_caption_generator/assets/102802326/916f713d-acec-4789-a962-fa16f574acac)
+
+
+# Signup page
 
 
 
+
+![Screenshot (120)](https://github.com/bhushan2311/image_caption_generator/assets/102802326/4fc3a436-7803-4889-b595-2a19ca5c7b44)
 
