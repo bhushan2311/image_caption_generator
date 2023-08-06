@@ -30,7 +30,7 @@ The users can get the generated captions on this page. To get the access to the 
 .
 
 
-After successfully Logging in, the user can see the text-to-speech and translation feature as shown in the image below. For translation react-speech-kit library is used. For translation Translation Api provided by RapidApi has been used. User can chooses its preferred language from the dropdown to translate caption.
+After successfully Logging in, the user can see the text-to-speech and translation feature as shown in the image below. For text-to-speech, react-speech-kit library is used. For translation, Translation Api provided by RapidApi has been used. User can chooses its preferred language from the dropdown to translate caption.
 
 ![Screenshot (143)](https://github.com/bhushan2311/image_caption_generator/assets/102802326/6d488652-16ba-48c4-849c-84b02d81a26c)
 
