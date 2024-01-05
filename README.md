@@ -6,15 +6,15 @@ An Image captioning web application combines the power of React.js for front-end
 ![Screenshot (118)](https://github.com/bhushan2311/image_caption_generator/assets/102802326/bc542a9e-f9c6-46b7-b10e-74a6db4dc2bc)
 
 
-# Upload page
+# Upload page (Guest)
 
-UI for the users who haven't Logged-in
+UI for the users who aren't Logged-in
 
 ![Screenshot (126)](https://github.com/bhushan2311/image_caption_generator/assets/102802326/9af5e459-a48c-448b-86c9-7241a6df7126)
 
 
-
-UI for the users who have Logged-in
+# Upload page (Logged In)
+UI for the users who are Logged-in
 
 ![Screenshot (121)](https://github.com/bhushan2311/image_caption_generator/assets/102802326/607c9dbd-16ff-435d-9e16-d3136113ea0a)
 
